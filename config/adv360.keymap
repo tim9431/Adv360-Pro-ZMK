@@ -36,7 +36,7 @@
             bindings = <&kp>, <&tog>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <15>;
+            tapping-term-ms = <100>;
         };
     };
 
