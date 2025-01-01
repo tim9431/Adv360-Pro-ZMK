@@ -74,11 +74,11 @@
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2  &kp F3     &kp F4    &kp F5    &kp F6     &tog 1                                          &mo 3   &kp F7  &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-&trans  &trans  &trans     &trans    &trans    &trans     &none                                           &none   &trans  &trans    &trans    &trans    &trans    &trans
-&trans  &trans  &kp EQUAL  &kp LPAR  &kp RPAR  &kp TILDE  &trans  &trans  &trans      &kp INSERT  &trans  &none   &trans  &kp LBRC  &kp LBKT  &kp RBKT  &kp RBRC  &trans
-&trans  &trans  &trans     &trans    &trans    &trans                     &trans      &trans                      &trans  &trans    &trans    &trans    &trans    &trans
-&trans  &trans  &trans     &trans    &trans               &trans  &trans  &trans      &trans      &trans  &trans          &trans    &trans    &trans    &trans    &trans
+&kp F1  &kp F2    &kp F3            &kp F4   &kp F5  &kp F6  &tog 1                                               &mo 3   &kp F7     &kp F8         &kp F9    &kp F10   &kp F11    &kp F12
+&trans  &trans    &trans            &trans   &trans  &trans  &none                                                &none   &kp TILDE  &kp BACKSLASH  &kp LPAR  &kp RPAR  &kp SLASH  &trans
+&trans  &kp EXCL  &kp SINGLE_QUOTE  &kp DQT  &trans  &trans  &trans  &trans  &trans               &trans  &trans  &none   &kp EQUAL  &kp CARET      &kp LBKT  &kp RBKT  &kp DLLR   &trans
+&trans  &trans    &trans            &trans   &trans  &trans                  &kp PAUSE_BREAK      &trans                  &trans     &kp MINUS      &trans    &trans    &trans     &trans
+&trans  &trans    &tog 4            &trans   &trans          &trans  &trans  &kp PRINTSCREEN      &trans  &trans  &trans             &trans         &trans    &trans    &trans     &trans
             >;
         };
 
@@ -89,6 +89,16 @@
 &none   &none         &none         &none         &none         &none         &rgb_ug RGB_MEFS_CMD 5  &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &trans  &none         &none         &none         &none         &none                                        &none      &none                                           &none  &none       &none       &none  &none  &none
 &none   &none         &none         &none         &none                       &none                   &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+            >;
+        };
+
+        game {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                        &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &kp SPACE  &kp LCTRL  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
