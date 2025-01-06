@@ -114,11 +114,11 @@
 
         symbol {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans                &trans                 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans                &trans                 &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans                &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans           &trans          &trans                &trans                 &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp GRAVE        &kp EQUAL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp EXCLAMATION  &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans           &trans          &trans                &trans                 &trans           &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                   &trans          &trans                &trans                 &trans           &trans
             >;
         };
     };
