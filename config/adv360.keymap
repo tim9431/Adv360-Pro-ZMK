@@ -57,6 +57,27 @@
             bindings = <&kp LS(INS)>;
             label = "PASTE";
         };
+
+        arrow: arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GREATER_THAN>;
+            label = "ARROW";
+        };
+
+        fnarrow: fnarrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GREATER_THAN>;
+            label = "FNARROW";
+        };
+
+        goequal: goequal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp EQUAL>;
+            label = "GOEQUAL";
+        };
     };
 
     keymap {
@@ -114,10 +135,10 @@
 
         symbol {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans           &trans          &trans                &trans                 &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &arrow           &kp PLUS        &fnarrow              &goequal               &kp EXCLAMATION  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp GRAVE        &kp EQUAL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS        &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp EXCLAMATION  &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans           &trans          &trans                &trans                 &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp TILDE        &kp UNDERSCORE  &trans                &trans                 &trans           &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                   &trans          &trans                &trans                 &trans           &trans
             >;
         };
