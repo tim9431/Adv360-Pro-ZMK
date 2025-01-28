@@ -69,6 +69,48 @@
             #binding-cells = <0>;
             bindings = <&mo 1>, <&tog 1>;
         };
+
+        tap_sqt: tap_sqt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_SQT";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE>, <&in_sqt>;
+        };
+
+        tap_dqt: tap_dqt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DQT";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES>, <&in_dqt>;
+        };
+
+        tap_par: tap_par {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_PAR";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS>;
+        };
+
+        tap_brkt: tap_brkt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_BRKT";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET>, <&in_brkt>;
+        };
+
+        tap_brace: tap_brace {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_BRACE";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE>, <&in_brace>;
+        };
+
+        tap_lt: tap_lt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_LT";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN>, <&in_lt>;
+        };
     };
 
     macros {
@@ -98,6 +140,48 @@
             #binding-cells = <0>;
             bindings = <&kp COLON &kp EQUAL>;
             label = "GOEQUAL";
+        };
+
+        in_brkt: in_brkt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+            label = "IN_BRKT";
+        };
+
+        in_brace: in_brace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW>;
+            label = "IN_BRACE";
+        };
+
+        in_paren: in_paren {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            label = "IN_PAREN";
+        };
+
+        in_dqt: in_dqt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT_ARROW>;
+            label = "IN_DQT";
+        };
+
+        in_sqt: in_sqt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp SINGLE_QUOTE &kp LEFT_ARROW>;
+            label = "IN_SQT";
+        };
+
+        in_lt: in_lt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT_ARROW>;
+            label = "IN_LT";
         };
     };
 
@@ -156,11 +240,11 @@
 
         symbol {
             bindings = <
-&trans  &trans           &trans         &kp SEMI          &kp COLON          &kp QUESTION      &trans                                      &trans  &trans          &arrow                &fnarrow               &goequal         &trans     &trans
-&trans  &kp CARET        &kp AMPERSAND  &kp STAR          &kp LESS_THAN      &kp GREATER_THAN  &trans                                      &trans  &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS        &kp PLUS   &trans
-&trans  &kp EXCLAMATION  &kp AT         &kp HASH          &kp DOLLAR         &kp PERCENT       &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &kp COLON  &kp DOUBLE_QUOTES
-&trans  &kp COMMA        &kp PERIOD     &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp PIPE                          &trans      &trans                  &kp GRAVE       &kp SLASH             &kp BACKSLASH          &kp UNDER        &kp EQUAL  &trans
-&trans  &trans           &trans         &trans            &trans                               &trans  &trans  &trans      &trans  &trans  &trans                  &trans                &trans                 &trans           &trans     &trans
+&trans  &trans           &trans         &kp SEMI  &kp COLON   &kp QUESTION      &trans                                      &trans  &trans      &arrow     &fnarrow               &goequal         &trans     &trans
+&trans  &kp CARET        &kp AMPERSAND  &kp STAR  &tap_lt     &kp GREATER_THAN  &trans                                      &trans  &kp TILDE   &tap_par   &kp RIGHT_PARENTHESIS  &kp MINUS        &kp PLUS   &trans
+&trans  &kp EXCLAMATION  &kp AT         &kp HASH  &kp DOLLAR  &kp PERCENT       &trans  &trans  &trans      &trans  &trans  &trans  &tap_brace  &tap_brkt  &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &kp COLON  &tap_dqt
+&trans  &kp COMMA        &kp PERIOD     &tap_sqt  &tap_dqt    &kp PIPE                          &trans      &trans                  &kp GRAVE   &kp SLASH  &kp BACKSLASH          &kp UNDER        &kp EQUAL  &trans
+&trans  &trans           &trans         &trans    &trans                        &trans  &trans  &trans      &trans  &trans  &trans              &trans     &trans                 &trans           &trans     &trans
             >;
         };
     };
