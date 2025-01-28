@@ -53,7 +53,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DBL_TAP_RCTRL_SYM";
             #binding-cells = <0>;
-            bindings = <&kp RCTRL>, <&tog 5>;
+            bindings = <&kp RCTRL>, <&mo 5>;
         };
 
         dbl_tap_lshft_caps: dbl_tap_lshft_caps {
