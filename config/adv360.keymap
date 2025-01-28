@@ -88,7 +88,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_PAR";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&in_paren>;
         };
 
         tap_brkt: tap_brkt {
