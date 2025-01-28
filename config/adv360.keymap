@@ -156,11 +156,11 @@
 
         symbol {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &arrow           &kp PLUS        &fnarrow              &goequal               &kp EXCLAMATION  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp GRAVE        &kp EQUAL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS        &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp EXCLAMATION  &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp TILDE        &kp UNDERSCORE  &trans                &trans                 &trans           &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                   &trans          &trans                &trans                 &trans           &trans
+&trans  &trans           &trans         &trans            &trans             &trans            &trans                                      &trans  &arrow           &trans                &fnarrow               &goequal           &kp EXCLAMATION  &trans
+&trans  &kp CARET        &kp AMPERSAND  &kp STAR          &kp LESS_THAN      &kp GREATER_THAN  &trans                                      &trans  &kp TILDE        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS          &kp PLUS         &trans
+&trans  &kp EXCLAMATION  &kp AT         &kp HASH          &kp DOLLAR         &kp PERCENT       &trans  &trans  &trans      &trans  &trans  &trans  &kp EXCLAMATION  &kp LEFT_BRACE        &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans
+&trans  &kp COMMA        &kp PERIOD     &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp PIPE                          &trans      &trans                  &kp GRAVE        &kp SLASH             &kp BACKSLASH          &kp UNDER          &kp EQUAL        &trans
+&trans  &trans           &trans         &trans            &trans                               &trans  &trans  &trans      &trans  &trans  &trans                   &trans                &trans                 &trans             &trans           &trans
             >;
         };
     };
