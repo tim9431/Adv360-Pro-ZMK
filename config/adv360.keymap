@@ -67,7 +67,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DBL_TAP_LALT_NP";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT>, <&tog 1>;
+            bindings = <&kp LEFT_ALT>, <&mo 1>;
         };
     };
 
