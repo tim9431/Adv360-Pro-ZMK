@@ -54,13 +54,15 @@
             label = "DBL_TAP_SYM";
             #binding-cells = <0>;
             bindings = <&mo 5>, <&tog 5>;
+
+            tapping-term-ms = <175>;
         };
 
         dbl_tap_lshft_caps: dbl_tap_lshft_caps {
             compatible = "zmk,behavior-tap-dance";
             label = "DBL_TAP_LSHFT_CAPS";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&caps_word>, <&kp CAPSLOCK>;
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>, <&kp CAPSLOCK>;
         };
 
         dbl_tap_np: dbl_tap_np {
@@ -68,6 +70,8 @@
             label = "DBL_TAP_NP";
             #binding-cells = <0>;
             bindings = <&mo 1>, <&tog 1>;
+
+            tapping-term-ms = <175>;
         };
 
         tap_sqt: tap_sqt {
@@ -200,11 +204,11 @@
 
         layer_keypad {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2  &kp N3    &kp N4     &kp N5  &trans                                                 &mo 3      &kp N6  &kp KP_NUM  &kp EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp Q      &kp W   &kp E     &kp R      &kp T   &none                                                  &none      &kp Y   &kp KP_N7   &kp KP_N8  &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A      &kp S   &kp D     &kp F      &kp G   &none     &trans   &kp LALT      &kp LGUI   &trans     &none      &kp H   &kp KP_N4   &kp KP_N5  &kp KP_N6      &kp KP_PLUS      &kp SQT
-&trans     &kp Z      &kp X   &kp C     &kp V      &kp B                      &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2  &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE  &none   &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL  &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN   &kp KP_DOT     &kp RBKT         &mo 2
+&kp EQUAL  &kp N1     &kp N2  &kp N3    &kp N4     &kp N5  &trans                                                 &mo 3         &kp N6  &kp KP_NUM    &kp EQUAL     &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB    &kp Q      &kp W   &kp E     &kp R      &kp T   &none                                                  &none         &kp Y   &kp NUMBER_7  &kp NUMBER_8  &kp N9         &kp KP_MINUS     &kp BSLH
+&kp ESC    &kp A      &kp S   &kp D     &kp F      &kp G   &none     &trans   &kp LALT      &kp LGUI   &trans     &none         &kp H   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp KP_PLUS      &kp SQT
+&trans     &kp Z      &kp X   &kp C     &kp V      &kp B                      &kp HOME      &kp PG_UP                           &kp N   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp KP_ENTER     &kp RSHFT
+&mo 2      &kp GRAVE  &none   &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL  &kp END       &kp PG_DN  &kp ENTER  &kp NUMBER_0          &kp UP        &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
             >;
         };
 
@@ -240,7 +244,7 @@
 
         symbol {
             bindings = <
-&trans  &trans           &trans         &kp SEMI  &kp COLON   &kp QUESTION      &trans                                      &trans  &trans      &arrow     &fnarrow               &goequal         &trans     &trans
+&trans  &kp SLASH        &kp BACKSLASH  &kp SEMI  &kp COLON   &kp QUESTION      &trans                                      &trans  &trans      &arrow     &fnarrow               &goequal         &trans     &trans
 &trans  &kp CARET        &kp AMPERSAND  &kp STAR  &tap_lt     &kp GREATER_THAN  &trans                                      &trans  &kp TILDE   &tap_par   &kp RIGHT_PARENTHESIS  &kp MINUS        &kp PLUS   &trans
 &trans  &kp EXCLAMATION  &kp AT         &kp HASH  &kp DOLLAR  &kp PERCENT       &trans  &trans  &trans      &trans  &trans  &trans  &tap_brace  &tap_brkt  &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &kp COLON  &tap_dqt
 &trans  &kp COMMA        &kp PERIOD     &tap_sqt  &tap_dqt    &kp PIPE                          &trans      &trans                  &kp GRAVE   &kp SLASH  &kp BACKSLASH          &kp UNDER        &kp EQUAL  &trans
