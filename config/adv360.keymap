@@ -210,11 +210,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL            &kp N1          &kp N2      &kp N3            &kp N4       &kp N5  &kp LA(F4)                                                   &mo 3      &kp N6  &kp N7          &kp N8           &kp N9           &kp N0                  &kp MINUS
-&kp TAB              &kp Q           &kp W       &kp E             &kp R        &kp T   &kp LG(LS(S))                                                &kp F5     &kp Y   &kp U           &kp I            &kp O            &kp P                   &kp BSLH
-&kp ESCAPE           &hm LEFT_GUI A  &hm LALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G   &kp LS(INSERT)  &mo 1    &mo 2         &mo 5      &mo 5      &kp LC(C)  &kp H   &hm RCTRL J     &hm RSHIFT K     &hm RIGHT_ALT L  &hm LEFT_WIN SEMICOLON  &tap_sqt
-&dbl_tap_lshft_caps  &kp Z           &kp X       &kp C             &kp V        &kp B                            &kp HOME      &kp PG_UP                        &kp N   &kp M           &mod_lt_dbl_tap  &kp DOT          &kp FSLH                &dbl_tap_rshift_caps
-&mo 2                &kp GRAVE       &none       &kp LEFT          &kp RIGHT            &kp BSPC        &kp DEL  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW     &tap_brkt        &kp RBKT                &mo 2
+&kp EQUAL            &kp N1          &kp N2      &kp N3            &kp N4       &kp N5  &kp LA(F4)                                                   &mo 3      &kp N6  &kp N7          &kp N8        &kp N9           &kp N0                  &kp MINUS
+&kp TAB              &kp Q           &kp W       &kp E             &kp R        &kp T   &kp LG(LS(S))                                                &kp F5     &kp Y   &kp U           &kp I         &kp O            &kp P                   &kp BSLH
+&kp ESCAPE           &hm LEFT_GUI A  &hm LALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G   &kp LS(INSERT)  &mo 1    &mo 2         &mo 5      &mo 5      &kp LC(C)  &kp H   &hm RCTRL J     &hm RSHIFT K  &hm RIGHT_ALT L  &hm LEFT_WIN SEMICOLON  &tap_sqt
+&dbl_tap_lshft_caps  &kp Z           &kp X       &kp C             &kp V        &kp B                            &kp HOME      &kp PG_UP                        &kp N   &kp M           &kp COMMA     &kp DOT          &kp FSLH                &dbl_tap_rshift_caps
+&mo 2                &kp GRAVE       &none       &kp LEFT          &kp RIGHT            &kp BSPC        &kp DEL  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &tap_brkt        &kp RBKT                &mo 2
             >;
         };
 
@@ -260,11 +260,11 @@
 
         symbol {
             bindings = <
-&trans  &trans           &trans  &trans    &trans      &trans       &trans                                      &trans  &trans     &arrow         &fnarrow   &goequal           &kp MINUS              &kp EQUAL
-&trans  &trans           &trans  &trans    &trans      &trans       &trans                                      &trans  &kp GRAVE  &kp TILDE      &tap_brkt  &kp RIGHT_BRACKET  &kp UNDERSCORE         &kp PLUS
-&trans  &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &trans  &trans  &trans      &trans  &trans  &trans  &kp CARET  &kp AMPERSAND  &kp STAR   &tap_par           &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans           &trans  &trans    &trans      &trans                       &trans      &trans                  &trans     &trans         &tap_lt    &kp GREATER_THAN   &trans                 &trans
-&trans  &trans           &trans  &trans    &trans                   &trans  &trans  &trans      &trans  &trans  &trans             &trans         &trans     &trans             &trans                 &trans
+&trans  &trans           &trans  &trans      &trans           &trans       &trans                                      &trans  &trans     &arrow         &fnarrow   &goequal           &kp MINUS              &kp EQUAL
+&trans  &trans           &trans  &tap_brace  &kp RIGHT_BRACE  &trans       &trans                                      &trans  &kp GRAVE  &kp TILDE      &tap_brkt  &kp RIGHT_BRACKET  &kp UNDERSCORE         &kp PLUS
+&trans  &kp EXCLAMATION  &kp AT  &kp HASH    &kp DOLLAR       &kp PERCENT  &trans  &trans  &trans      &trans  &trans  &trans  &kp CARET  &kp AMPERSAND  &kp STAR   &tap_par           &kp RIGHT_PARENTHESIS  &tap_dqt
+&trans  &trans           &trans  &trans      &trans           &trans                       &trans      &trans                  &trans     &trans         &tap_lt    &kp GREATER_THAN   &trans                 &trans
+&trans  &trans           &trans  &trans      &trans                        &trans  &trans  &trans      &trans  &trans  &trans             &trans         &trans     &trans             &trans                 &trans
             >;
         };
     };
